@@ -1,0 +1,32 @@
+
+package systemtabuada;
+import java.util.Scanner;
+
+public class SystemTabuada {
+
+    public static void main(String[] args) {
+        Scanner entNum = new Scanner (System.in);
+        Scanner entTxt = new Scanner (System.in);
+        
+        System.out.println("Bem Vindo ao Sistema de Tabuadas");
+        String continuar = "s";
+        
+        while(continuar.equals("s")){
+        System.out.println("Digite o numero e veja sua tabuada ate o 10");
+           
+        int numTabuada = entNum.nextInt();
+        
+        for (int cont = 1; cont <=10; cont++){
+         System.out.println(numTabuada + " x " + cont + " = " + (numTabuada * cont)); 
+        }
+        
+            System.out.println("Deseja Calcular outra tabuada? (s/n)");
+            continuar = entTxt.nextLine();
+            
+    }
+        System.out.println("Continuar: " + continuar);
+        System.out.println("Calculado com sucesso");
+        System.out.println("Até mais");
+  }
+}
+
